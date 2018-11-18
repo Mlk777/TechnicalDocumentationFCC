@@ -1,27 +1,31 @@
 <template>
-  <!--<div id="app" class="blur-top blur-bottom">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    </div>
-    -->
     <div id="app">
       <sidebar></sidebar>
     <introduction></introduction>
     <why-git></why-git>
+    <benefits></benefits>
+    <getting-started></getting-started>
+    <git-hub></git-hub>
+    <your-first-repo></your-first-repo>
+    <get-going></get-going>
     </div>
 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Sidebar from './components/Sidebar.vue'
 import Introduction from './components/Introduction.vue'
 import WhyGit from './components/WhyGit.vue'
+import Benefits from "./components/Benefits.vue";
+import GettingStarted from "./components/GettingStarted.vue";
+import GitHub from "./components/GitHub.vue";
+import YourFirstRepo from "./components/YourFirstRepo.vue";
+import GetGoing from "./components/GetGoing.vue";
 
 export default {
   name: 'app',
   components: {
-    HelloWorld, Sidebar, Introduction, WhyGit
+    Sidebar, Introduction, WhyGit, Benefits, GettingStarted, GitHub, YourFirstRepo, GetGoing
   },
 }
 </script>
@@ -39,20 +43,9 @@ export default {
 
 body {
   font-family: arial;
-  /*font-size: 12px;*/
   background: #202020;
   color: #f0f0f0;
-  /* overflow: hidden; */
   padding: 0;
   margin: 0;
 }
-
-/*#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}*/
 </style>

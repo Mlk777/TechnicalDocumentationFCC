@@ -1,16 +1,18 @@
 <template>
-  <section id="WhyGit" ref="WhyGit" href="WhyGit">
+  <section id="WhyGit" href="WhyGit">
     <div class="content">
       <header id="section-title">
       Why Git ?
     </header>
-    <hr id="hr-article">
+    <!-- <hr id="hr-article"> -->
     <article>
       <p>
-        JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+        You might wonder why is everybody talks about Git and why it's so popular. Well, the answer is that Git is by far, the most widely used modern version control system in the world. It was created in 2005 by Linus Torvalds the famous creator of the Linux operating system kernel.<br>
+        Popular means that you'll find plenty of tutorials and documentation on the web and also be able to reproduce what you learned in your different jobs.<br><br>
       </p>
       <p>
-        JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+        In fact it's not the only benefit of using Git, the system was built to bring : <br>
+        <em>Performance</em>, <em>Security</em> and <em>Flexibility</em> in your current team workflow, while bringing you the best experience it can deliver.
       </p>
     </article>
     </div>
@@ -23,6 +25,3 @@ export default {
 }
 
 </script>
-
-<style>
-</style>

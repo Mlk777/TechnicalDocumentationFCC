@@ -5,23 +5,26 @@
     </header>
     <hr>
     <ul class="nav-menu">
-      <a v-on:click.prevent="scroll('Introduction', $event)" href="#Introduction">
+      <a v-on:click.prevent="scroll('Introduction')" href="#Introduction">
         <li>Introduction</li>
       </a>
       <a v-on:click.prevent="scroll('WhyGit')" href="#WhyGit">
         <li>Why Git ?</li>
       </a>
-      <a href="Prerequisites">
-        <li>Prerequisites</li>
+      <a v-on:click.prevent="scroll('Benefits')" href="#Benefits">
+        <li>The benefits</li>
       </a>
-      <a href="Configuration">
-        <li>Configuration</li>
+      <a v-on:click.prevent="scroll('GettingStarted')" href="#GettingStarted">
+        <li>Getting Started</li>
       </a>
-      <a href="">
-        <li></li>
+      <a v-on:click.prevent="scroll('GitHub')" href="#GitHub">
+        <li>GitHub</li>
       </a>
-      <a href="">
-        <li></li>
+      <a v-on:click.prevent="scroll('YourFirstRepo')" href="#YourFirstRepo">
+        <li>Your First Repository</li>
+      </a>
+      <a v-on:click.prevent="scroll('GetGoing')" href="#GetGoing">
+        <li>Get Going</li>
       </a>
     </ul>
   </nav>
@@ -32,7 +35,7 @@ export default {
   name: 'Sidebar',
   methods: {
       scroll: function(section) {
-        this.$nextTick( () => {          // console.log(event.target)
+        this.$nextTick( () => {
           let idSection = document.getElementById(section);
           idSection.scrollIntoView({
             behavior: 'smooth'
@@ -53,10 +56,6 @@ export default {
   height: 100vh;
 }
 
-header {
-  /* margin: auto; */
-}
-
 hr {
   margin: 0 10px 20px 10px;
 }
@@ -68,9 +67,6 @@ hr {
   font-size: 1.5em;
   font-weight: 800;
   color: #f0f0e8;
-  /* #ee4c34 out
-    #f0f0e8 in
-   */
   line-height: 2;
 }
 
@@ -125,10 +121,62 @@ ul {
   align-content: center;
   padding: 0;
   pointer-events: none;
-  color: red;
+  /* color: red; */
   margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+  #sidebar-title {
+    font-size: 2em;
+  }
+
+  #section-title {
+    font-size: 2.5em !important;
+  }
+
+  ul {
+    flex-flow: wrap;
+    font-size: 0.9em;
+  }
+
+  #navbar {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    height: auto !important;
+    padding-left: 0 !important;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 0.8em;
+  }
+
+  article {
+    text-align: center;
+  }
+
+  code {
+    word-break: break-word;
+  }
+
+  p {
+    line-height: 2em !important;
+  }
+
+  a {
+    border: 0.1px ridge #cddc3952;
+    border-radius: 10px;
+    margin: 15px !important;
+  }
+}
+</style>
+
+
+<style scoped>
 a {
   display: block;
   margin: 0.5em 0;
@@ -136,18 +184,4 @@ a {
   text-align: center;
   text-decoration: none;
 }
-
-/*.nav-menu {
-  position: fixed;
-  width: 100vh;
-  top: 0px;
-  left: 0px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: columns;
-  justify-content: center;
-  align-items: center;
-}*/
 </style>
-
-
