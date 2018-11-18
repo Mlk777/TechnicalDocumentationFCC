@@ -125,7 +125,7 @@ ul {
   margin: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   #sidebar-title {
     font-size: 2em;
   }
