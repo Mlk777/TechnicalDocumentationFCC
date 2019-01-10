@@ -61,6 +61,7 @@ code {
   background: grey;
   color: #a50000;
   font-weight: 600;
+  font-size: calc(14px + 0.5vw);
   margin: 10px;
   border: 1px solid #607d8b;
   border-radius: 5px;
